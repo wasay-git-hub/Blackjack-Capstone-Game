@@ -13,11 +13,10 @@ def initialization():
     player_cards.append(card2)
 
     comp1 = random.choice(cards)
-    # comp2 = random.choice(cards)
     comp_cards.append(comp1)
-    # comp_cards.append(comp2)
     initial_sum = card1 + card2
     comp_sum = comp1
+    
     print(f"Your cards: [{card1},{card2}]\nCurrent Score: {initial_sum}")
     print(f"Computer's first card: {comp1}. 2nd is unturned.\n")
     return player_cards, comp_cards, initial_sum, comp_sum
